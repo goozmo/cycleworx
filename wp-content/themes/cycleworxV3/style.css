@@ -1,0 +1,125 @@
+/*
+Theme Name:   LTD Cycleworx V3
+Theme URI:    http://themetrust.com/port
+Description:  LTD Cycleworx V3
+Author:       Goozmo
+Author URI:   http://goozmo.com
+Template:     enfold
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:         my, child, theme, tags
+Text Domain:  ltd-cycleworxV3
+*/
+
+
+/*
+	
+	orange : rgb( 239, 118, 34 );
+	the hideous green : rgb( 192, 212, 47 )
+	
+*/
+html, body
+{
+	overflow-x : hidden;
+}
+
+* a
+{
+	transition : color 0.2s ease-in-out;
+	-webkit-transition : color 0.2s ease-in-out;
+}
+
+* a:hover
+{
+	text-decoration: none;
+}
+
+.home #main h3.av-special-heading-tag
+{
+	font-size: 3em;
+}
+
+#footer ul li,
+#footer .social
+{
+	text-align: right;
+}
+
+#footer .social
+{
+	margin-top: 10px !important;
+}
+
+#footer .social li
+{
+	display: inline-table;
+	padding-right: 8%;
+	font-size: 1.5em;
+	font-weight: light;
+	text-align: right;
+}
+
+#footer .social li:last-of-type
+{
+	padding-right: 0;
+}
+
+#layer-buttons a
+{
+	background-color: #941d1e;
+	font-size: 1.5em;
+	color: #fff;
+}
+
+
+#layer-buttons a:hover
+{
+	background-color: rgb( 118, 0, 0 );
+
+}
+
+#top .thumbnail_container img
+{
+	width: 90%;
+	padding-left: 10%;
+}
+
+.thumbnail_container
+{
+	background-color: #fff;
+}
+
+.avia_cart_buttons
+{
+	opacity: 0.8;
+}
+
+.main_color .sort-param > li > span,
+.main_color .sort-param > li > a,
+.main_color .sort-param ul
+{
+	background-color: transparent;
+	color: #fff;
+	border-radius: 2px;
+}
+
+.current-param a
+{
+	color: #fff;
+}
+
+.html_visible_cart .cart_dropdown {
+	right: 20px;
+}
+
+@media screen and ( max-width: 720px ){
+	
+	#footer *, 
+	#socket *,
+	#footer ul li
+	{
+		text-align: center;
+	}
+	
+}

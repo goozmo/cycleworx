@@ -1,0 +1,470 @@
+/*
+Theme Name:   LTD Cycleworx
+Theme URI:    http://themetrust.com/port
+Description:  LTD Cycleworx
+Author:       Goozmo
+Author URI:   http://goozmo.com
+Template:     enfold
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:         my, child, theme, tags
+Text Domain:  ltd-cycleworx 
+*/
+
+
+/*
+	
+*/
+html, body
+{
+	overflow-x : hidden;
+	background-color: rgb( 0,0,0 );
+}
+
+.html_stretched #wrap_all,
+#main .main_color,
+#footer.footer_color,
+.header_color div,
+.header_color .container_wrap_meta,
+.socket_color
+{
+	background-color: rgb( 0,0,0 );
+}
+
+.html_stretched #wrap_all,
+.header_color div,
+.header_color .container_wrap_meta,
+#main .main_color,
+.socket_color
+{
+	background-image: url( '/wp-content/themes/cycleworx/images/background-tile.png' );
+}
+
+* a
+{
+	transition : color 0.2s ease-in-out;
+	-webkit-transition : color 0.2s ease-in-out;
+}
+
+* a:hover
+{
+	text-decoration: none;
+}
+
+#header
+{
+	position: fixed;
+	z-index: 501;
+	transition: transform 0.2s ease-in-out;
+	-webkit-transition: transform 0.2s ease-in-out;
+}
+
+#_goo-header-hotlink
+{
+	overflow: visible;
+	height: 100px;
+}
+
+#_goo-header-hotlink:before
+{
+	content:"";
+	position: absolute;
+	width: 100%;
+	height: 400px;
+/*
+	background-image: url( /wp-content/themes/cycleworx/images/overlay.png ), url( /wp-content/themes/cycleworx/images/mud.jpg );
+	background-position: center top, right top;
+	background-size: cover, inherit;
+	background-repeat: no-repeat;
+	-webkit-transform: rotate(173deg);
+	transform: rotate(173deg);
+	margin-top: -130px;
+*/
+}
+
+#_goo-aniLogo-palette
+{
+	height: 300px;
+	width: 300px;
+	position: absolute;
+	margin: 10px 0;
+	z-index: 100;
+	
+	transition: opacity 0.4s ease-out;
+	-webkit-transition: opacity 0.4s ease-out;
+	
+}
+	
+	#_goo-aniLogo-palette ._goo-layer
+	{
+		position: absolute;
+		max-height: 300px;
+	}
+	
+		#_goo-aniLogo-palette ._goo-layer img
+		{
+			height: 100%;
+		}
+		
+	#_goo-aniLogo-palette #_goo-layer1
+	{
+		height: 100%;
+		top: 0;
+		left: 0;
+		transition: transform 0.5s ease-out;
+		-webkit-transition: transform 0.5s ease-out;
+	}
+	
+	#_goo-aniLogo-palette #_goo-layer2
+	{
+		height: 20%;
+		top: 62%;
+		left: 39.5%;
+	}
+	
+	#_goo-aniLogo-palette #_goo-layer3
+	{
+		height: 7%;
+		top: 33%;
+		left:32.5%;
+	}
+	
+	#_goo-aniLogo-palette #_goo-layer4
+	{
+		height: 15%;
+		top: 42%;
+		width: 100%;
+		left: 20%;
+		transition: transform 0.5s ease-out;
+		-webkit-transition: transform 0.5s ease-out;
+	}
+
+@media screen and ( max-width: 450px ){
+	
+	#_goo-aniLogo-palette
+	{
+		height: 200px;
+		width: 250px;
+	}
+	
+	#_goo-aniLogo-palette #_goo-layer4
+	{
+		left: 17%;
+	}
+	
+	#_goo-aniLogo-palette #_goo-layer3
+	{
+		left: 26%;
+	}
+	
+	#_goo-aniLogo-palette #_goo-layer2
+	{
+		left: 31%;
+	}
+	
+}
+
+
+
+
+
+
+._goo-full-menu
+{
+	display: none;
+	width: auto;
+	text-align: right;
+	right: 0;
+	position: absolute;
+	top: 0;
+	font-size: 36px;
+}
+
+.html_header_top.html_header_topbar_active.html_header_sticky #top #main
+{
+	padding-top: 0;
+}
+
+@media screen and ( max-width: 767px ){
+	
+	._goo-full-menu,
+	#header_main .logo
+	{
+		display: none;
+	}
+}
+
+@media screen and ( max-width: 1340px ){
+	._goo-full-menu, #header_main .logo{
+		right: 5%;
+	}
+}
+
+#top .avia-logo-element-container img
+{
+	width: 60%; 
+	margin: 0 auto;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	
+	transition: filter 0.2s ease-in-out;
+	-webkit-transition: filter 0.2s ease-in-out;
+}
+
+#top .avia-logo-element-container img:hover
+{
+	width: 60%; 
+	margin: 0 auto;
+	-webkit-filter: inherit;
+	filter: inherit;
+}
+
+._goo-full-address
+{
+	position: absolute;
+	right: 0;
+	top: 65px;
+	text-align: right;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+	._goo-full-address ._goo-title
+	{
+		
+		font-weight: 900;
+	}
+
+
+
+
+
+
+
+.main_color, .main_color .site-background, .main_color .first-quote, .main_color .related_image_wrap, .main_color .gravatar img .main_color .hr_content, .main_color .news-thumb, .main_color .post-format-icon, .main_color .ajax_controlls a, .main_color .tweet-text.avatar_no, .main_color .toggler, .main_color .toggler.activeTitle:hover, .main_color #js_sort_items, .main_color.inner-entry, .main_color .grid-entry-title, .main_color .related-format-icon, .grid-entry .main_color .avia-arrow, .main_color .avia-gallery-big, .main_color .avia-gallery-big, .main_color .avia-gallery img, .main_color .grid-content, .main_color .av-share-box ul, #top .main_color .av-related-style-full .related-format-icon, .main_color .related_posts.av-related-style-full a:hover, .main_color.avia-fullwidth-portfolio .pagination .current, .main_color.avia-fullwidth-portfolio .pagination a, .main_color .av-hotspot-fallback-tooltip-inner, .main_color .av-hotspot-fallback-tooltip-count, span.avia-testimonial-subtitle, .main_color .avia-testimonial-subtitle
+{
+	background-color: #fff;
+	color: #fff;
+}
+
+#av_section_1 .av-special-heading h3
+{
+/* 	color: #941d1e; */
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.avia-testimonial-meta-mini strong.avia-testimonial-name
+{
+/* 	color: #941d1e; */
+	text-align: center;
+}
+
+.avia-testimonial-meta-mini  span.avia-testimonial-subtitle
+{
+	text-align: center;
+}
+
+.home .sort_width_container.av-sort-yes
+{
+	padding-top:0;
+	padding-bottom: 0;
+}
+
+.avia-testimonial_inner .avia-testimonial-content
+{
+	color: rgb( 150,150,150 );
+}
+
+#footer *
+{
+/* 	color: rgb( 68,68,68 ); */
+}
+#socket *
+{
+	color: rgb( 150,150,150 );
+}
+
+.main_color .special_amp
+{
+	color: #941d1e;
+}
+
+.image-overlay.overlay-type-extern .image-overlay-inside:before
+{
+	background-color: #941d1e;
+}
+
+.av-special-heading-h3
+{
+	padding-top: 10px;
+}
+
+.home #main h3.av-special-heading-tag
+{
+	font-size: 3em;
+}
+
+.grid-image img
+{
+	width: 80%;
+	margin: 0 auto;
+}
+
+#top .main_color .price
+{
+	color: #941d1e;
+}
+
+#layer-buttons a
+{
+	background-color: #941d1e;
+	font-size: 1.5em;
+}
+
+#footer .textwidget ul li a
+{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#footer .textwidget a:hover
+{
+/* 	color: #941d1e; */
+}
+
+#footer .social li
+{
+	display: inline-table;
+	padding-right: 6%;
+	font-size: 1.5em;
+	font-weight: light;
+}
+
+
+
+#header_meta,
+#top .social_bookmarks li a,
+#header_meta .container
+{
+	min-height: 40px;
+}
+
+#top .social_bookmarks li
+{
+	width: 40px;
+}
+
+#top .social_bookmarks
+{
+	height: 40px;
+}
+
+#top #wrap_all .social_bookmarks a
+{
+	font-size: 24px;
+	padding-top: 4px;
+	width: 40px;
+}
+
+#top #wrap_all .social_bookmarks a:hover
+{
+	text-decoration: none;
+}
+
+.phone-info
+{
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 28px;
+}
+
+.main_color,
+.header_color div
+{
+	border-color: #666;
+}
+
+#main #accordion_slider_0
+{
+
+}
+
+span.avia-testimonial-subtitle,
+.main_color .avia-testimonial-subtitle
+{
+	background-color: transparent;
+}
+
+.html_visible_cart .cart_dropdown
+{
+	right: 4%;
+}
+
+span.image-overlay.overlay-type-image span.image-overlay-inside:before
+{
+	background-color: rgb( 148, 29, 30 );
+}
+
+#tysons-buttons
+{
+	width: 100%;
+	position: absolute;
+	top: 450px;
+	z-index: 100;
+	text-align: center;
+}
+	#tysons-buttons .tysons-buttons-container a.button
+	{
+		display: inline-table;
+		min-width: 150px;
+		padding: 15px 20px;
+		margin: 0 5px;
+		
+		background-color: rgb( 148, 29, 30 );
+		border-radius: 4px;
+		
+		color: #fff;
+		font-size: 1.6em;
+		font-weight: bold;
+		font-family: 'Raleway', sans-serif;
+		text-transform: uppercase;
+	}
+	
+	#tysons-buttons .tysons-buttons-container a.button:hover
+	{
+		background-color: rgb( 118, 0, 0 );
+	}
+	
+	@media screen and ( max-width: 720px ){
+		
+		#tysons-buttons .tysons-buttons-container a.button
+		{
+			width: 90%;
+			margin: 5%;	
+		}
+		
+		#tysons-buttons
+		{
+			top: 515px;
+		}
+		
+	}
+	
+	@media screen and ( max-width: 450px ){
+		#tysons-buttons
+		{
+			top: 500px;
+		}
+	}
+	
+	
+	
+	
+	
+
+.staff-member
+{
+	padding-bottom: 40px;
+}
